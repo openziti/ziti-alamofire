@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E6E1AED825C143392BD9659 /* Pods_ziti_alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F493389F4807DFE21180101E /* Pods_ziti_alamofire.framework */; };
 		5A3F38A924E9AC0200A59173 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3F38A824E9AC0200A59173 /* AppDelegate.swift */; };
 		5A3F38AB24E9AC0200A59173 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3F38AA24E9AC0200A59173 /* SceneDelegate.swift */; };
 		5A3F38AD24E9AC0200A59173 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3F38AC24E9AC0200A59173 /* ViewController.swift */; };
@@ -24,6 +25,9 @@
 		5A3F38B124E9AC0600A59173 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A3F38B424E9AC0600A59173 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A3F38B624E9AC0600A59173 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DF05C33749E4BFCE9FE4AF0 /* Pods-ziti-alamofire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ziti-alamofire.release.xcconfig"; path = "Target Support Files/Pods-ziti-alamofire/Pods-ziti-alamofire.release.xcconfig"; sourceTree = "<group>"; };
+		72C5AEFDC55FE2A23EEFB94A /* Pods-ziti-alamofire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ziti-alamofire.debug.xcconfig"; path = "Target Support Files/Pods-ziti-alamofire/Pods-ziti-alamofire.debug.xcconfig"; sourceTree = "<group>"; };
+		F493389F4807DFE21180101E /* Pods_ziti_alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ziti_alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E6E1AED825C143392BD9659 /* Pods_ziti_alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				5A3F38A724E9AC0200A59173 /* ziti-alamofire */,
 				5A3F38A624E9AC0200A59173 /* Products */,
+				68183815A0B453837903F1DE /* Pods */,
+				72E4F32E93118A071CAB0593 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = "ziti-alamofire";
 			sourceTree = "<group>";
 		};
+		68183815A0B453837903F1DE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				72C5AEFDC55FE2A23EEFB94A /* Pods-ziti-alamofire.debug.xcconfig */,
+				6DF05C33749E4BFCE9FE4AF0 /* Pods-ziti-alamofire.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		72E4F32E93118A071CAB0593 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F493389F4807DFE21180101E /* Pods_ziti_alamofire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5A3F38B924E9AC0600A59173 /* Build configuration list for PBXNativeTarget "ziti-alamofire" */;
 			buildPhases = (
+				B268B69AC589DF8563A1F006 /* [CP] Check Pods Manifest.lock */,
 				5A3F38A124E9AC0200A59173 /* Sources */,
 				5A3F38A224E9AC0200A59173 /* Frameworks */,
 				5A3F38A324E9AC0200A59173 /* Resources */,
+				2D25CA5034B0883C644A2EFD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2D25CA5034B0883C644A2EFD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ziti-alamofire/Pods-ziti-alamofire-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ziti-alamofire/Pods-ziti-alamofire-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ziti-alamofire/Pods-ziti-alamofire-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B268B69AC589DF8563A1F006 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ziti-alamofire-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5A3F38A124E9AC0200A59173 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		5A3F38BA24E9AC0600A59173 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72C5AEFDC55FE2A23EEFB94A /* Pods-ziti-alamofire.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +370,7 @@
 		};
 		5A3F38BB24E9AC0600A59173 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DF05C33749E4BFCE9FE4AF0 /* Pods-ziti-alamofire.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -2,9 +2,6 @@
 //  SceneDelegate.swift
 //  ziti-alamofire
 //
-//  Created by David Hart on 8/16/20.
-//  Copyright © 2020 NetFoundry. All rights reserved.
-//
 
 import UIKit
 
